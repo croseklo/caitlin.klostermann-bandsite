@@ -1,11 +1,134 @@
+
+@font-face{
+    font-family:'Avenir Next Bold';
+    src: url(../assets/fonts/AvenirNextLTPro-Bold.otf);
+}
+
+@font-face{
+    font-family:'Avenir Next Demi';
+    src: url(../assets/fonts/AvenirNextLTPro-Demi.otf);
+}
+
+@font-face{
+    font-family:'Avenir Next Regular';
+    src: url(../assets/fonts/AvenirNextLTPro-Regular.otf);
+}
+
+/** Breakpoints **/
+$mobile-breakpoint: 320px;
+$tablet-breakpoint: 768px;
+$desktop-breakpoint: 1024px;
+
+@mixin mobile{
+    @media screen and (min-width: $mobile-breakpoint){
+        @content;
+    }
+}
+
+@mixin tablet{
+    @media screen and (min-width: $mobile-breakpoint){
+        @content;
+    }
+}
+
+@mixin desktop{
+    @media screen and (min-width: $mobile-breakpoint){
+        @content;
+    }
+}
+
+
+/** Body & Link Styling **/
+
 *{
     box-sizing: border-box;
+    margin: 0;
 }
+
+a:link{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+
+/** Navigation Styling **/
 
 nav{
     background-color: #323232;
+    color: white;
 }
+
+nav h1{
+    font-family: 'Avenir Next Regular';
+    margin: 0;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.nav__links{    
+    font-family: 'Avenir Next Demi';
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+}
+
+
+/** Main Styling  **/
+.hero{
+    background-image: url("../assets/Images/hero-bio.jpg");
+    background-size: cover;
+    background-position: center;
+    background: linear-gradient(#323232);
+    opacity: 50%;
+        @include mobile{
+            height: 15rem;
+            width: auto;
+        }
+}
+
+.hero_title{
+    font-family: 'Avenir Next Bold'; 
+    color: white;
+}
+
+.main__about p{
+    font-family: 'Avenir Next Bold';
+}
+
+.main__about--quote{
+    font-family: 'Avenir Next Demi';
+}
+
+.main__about--paragraph{
+    font-family: 'Avenir Next Regular';
+}
+
+.main__photos{
+    font-family: 'Avenir Next Bold';
+}
+
+/** Footer Styling **/
 
 footer{
     background-color: #323232;
+    color: white;
+}
+
+.footer__title{
+    font-family: 'Avenir Next Bold';
+}
+
+.footer__contact--title{
+    font-family: 'Avenir Next Demi';
+}
+
+.footer__contact--info{
+    font-family: 'Avenir Next Regular';
 }
