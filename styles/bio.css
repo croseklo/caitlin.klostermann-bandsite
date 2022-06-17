@@ -19,12 +19,6 @@
 
 a:link {
   text-decoration: none;
-  color: white;
-}
-
-a:hover {
-  text-decoration: underline;
-  color: white;
 }
 
 /** Navigation Styling **/
@@ -33,12 +27,13 @@ nav {
   color: white;
 }
 
-nav h1 {
+nav p {
   font-family: "Avenir Next Regular";
   margin: 0;
   padding-top: 30px;
   padding-bottom: 20px;
   text-align: center;
+  font-size: 2rem;
 }
 
 .nav__links {
@@ -46,11 +41,26 @@ nav h1 {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  padding-bottom: 20px;
+}
+
+.fixed__page {
+  border-bottom: 3px solid white;
+  padding-bottom: 17px;
+  width: 50%;
+  text-align: center;
+  color: white;
+}
+
+.second__page {
+  width: 50%;
+  text-align: center;
+  color: white;
 }
 
 /** Main Styling  **/
 .hero {
+  display: flex;
+  align-items: center;
   background-image: url("../assets/Images/hero-bio.jpg");
   background-size: cover;
   background-position: center;
@@ -66,39 +76,126 @@ nav h1 {
 
 .hero_title {
   font-family: "Avenir Next Bold";
+  font-size: 2rem;
   color: white;
+  padding-left: 16px;
+}
+
+main div {
+  color: #323232;
 }
 
 .main__about p {
   font-family: "Avenir Next Bold";
+  font-size: 2rem;
+  padding-top: 24px;
+  margin-bottom: 16px;
+  margin-left: 16px;
 }
 
-.main__about--quote {
+.main__about--img {
+  width: 100%;
+  height: auto;
+  padding: 0 16px;
+}
+
+.main__about .main__about--quote {
   font-family: "Avenir Next Demi";
+  font-size: 1rem;
+  padding-top: 16px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin: 0;
+}
+
+.main__about .main__about--source {
+  font-family: "Avenir Next Demi";
+  font-size: 0.875rem;
+  padding: 0 16px;
+  margin: 0;
 }
 
 .main__about--paragraph {
   font-family: "Avenir Next Regular";
 }
 
+.main__about--paragraph .main__about--title {
+  font-family: "Avenir Next Demi";
+  font-size: 1rem;
+  padding: 24px 16px 16px 16px;
+}
+
+.main__about--paragraph p {
+  font-family: "Avenir Next Regular";
+  padding: 0 16px 16px 16px;
+}
+
+/**Main Photo Gallery Styling**/
 .main__photos {
-  font-family: "Avenir Next Bold";
+  font-family: "Avenir Next Demi";
+  background-color: #FAFAFA;
+  color: #323232;
+}
+
+.main__photos p {
+  font-size: 2rem;
+  padding: 24px 16px 0 16px;
+}
+
+.main__photos img {
+  width: 100%;
+  height: auto;
+  padding: 8px 16px;
 }
 
 /** Footer Styling **/
 footer {
   background-color: #323232;
   color: white;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .footer__title {
-  font-family: "Avenir Next Bold";
+  font-family: "Avenir Next Demi";
+  font-size: 2rem;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+footer img {
+  width: auto;
+  height: 30px;
+}
+
+footer a {
+  padding-right: 32px;
+}
+
+.footer__contact--top {
+  padding-top: 32px;
 }
 
 .footer__contact--title {
   font-family: "Avenir Next Demi";
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .footer__contact--info {
   font-family: "Avenir Next Regular";
+  padding-bottom: 24px;
+}
+
+.footer__bandsite--title {
+  font-family: "Avenir Next Regular";
+  font-size: 2rem;
+  padding-top: 24px;
+  padding-bottom: 16px;
+}
+
+.footer__bandsite--copyright {
+  font-family: "Avenir Next Regular";
+  font-size: 0.75rem;
 }/*# sourceMappingURL=bio.css.map */
