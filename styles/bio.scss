@@ -171,11 +171,11 @@ nav p{
     }
     @include tablet{
         padding-left: 36px;
-        font-size: 3.75rem;
+        font-size: 3.5rem;
     }
     @include desktop{
         padding-left: 64px;
-        font-size: 4rem;
+        font-size: 3.75rem;
     }
 }
 
@@ -183,22 +183,53 @@ main div{
     color: $primary-color;
 }
 
-.main__about p{
+.main__about{
+    @include tablet{
+    margin-left: 16px;
+    margin-right: 16px;
+    }
+    @include desktop{
+        margin-left: 36px;
+        margin-right: 36px;
+    }
+}
+
+.main__about--title{
     font-family: 'Avenir Next Demi';
-    font-size: 2rem;
     padding-top: 24px;
     margin-bottom: 16px;
-    margin-left: 16px;
+    @include mobile{
+        font-size: 1.9rem;
+        padding-left: 16px;
+    }
+    @include tablet{
+        font-size: 2rem;
+        padding-left: 36px;
+    }
+    @include desktop{
+        font-size: 2.25rem;
+        padding-left: 64px;
+    }
 }
 
 .main__about--img{
+    @include mobile{
     width: 100%;
     height: auto;
-    @include mobile{
-    padding: 0 16px
+    padding-left: 16px;
+    padding-right: 16px;
     }
     @include tablet{
-    padding: 0 36px;
+    width: 100%;
+    height: auto;
+    padding-left: 36px;
+    padding-right: 36px;
+    }
+    @include desktop{
+    width: 100%;
+    height: auto;
+    padding-left: 80px;
+    padding-right: 80px;
     }
 }
 
@@ -213,6 +244,10 @@ main div{
     @include tablet{
         padding: 36px 36px 18px 36px;
     }
+    @include desktop{
+        padding: 36px 36px 18px 80px;
+        width: 60%;
+    }
 }
 
 .main__about .main__about--source{
@@ -224,14 +259,25 @@ main div{
     }
     @include tablet{
         padding: 0 36px;
-        }
+    }
+    @include desktop(){
+        padding: 0 80px;
+    }
 }
 
 .main__about--info{
     font-family: 'Avenir Next Regular';
+    @include tablet{
+        margin-left: 16px;
+        margin-right: 16px;
+        }
+        @include desktop{
+            margin-left: 36px;
+            margin-right: 36px;
+        }
 }
 
-.main__about--info .main__about--title{
+.main__about--info .main__about--paratitle{
     color: $dark-color;
     @include mobile{
     font-family: 'Avenir Next Regular';
@@ -242,7 +288,12 @@ main div{
         font-family: 'Avenir Next Demi';
         padding: 52px 36px 36px 36px;
         font-size: 1.5rem;
-        }
+    }
+    @include desktop{
+        font-family: 'Avenir Next Demi';
+        padding: 52px 36px 36px 64px;
+        font-size: 1.5rem;
+    }
 }
 
 .main__about--info .main__about--para1,
@@ -262,6 +313,12 @@ main div{
         flex-direction: row;
         width: 45%;
         padding: 0 0px 36px 36px;
+    }
+    @include desktop(){
+        display: inline-flex;
+        flex-direction: row;
+        width: 45%;
+        padding: 0 0px 36px 64px;
     }
 }
 
@@ -321,7 +378,6 @@ main div{
 footer{
     background-color: $primary-color;
     color: $tertiary-color;
-    padding-left: 16px;
     padding-right: 16px;
 }
 
@@ -334,7 +390,11 @@ footer{
     }
     @include tablet{
         display: inline-flex;
-        padding: 36px 36px 36px 16px;
+        padding: 36px;
+    }
+    @include desktop(){
+        display: inline-flex;
+        padding: 36px 36px 36px 64px;
     }
 }
 
@@ -369,7 +429,14 @@ footer a{
         flex-direction: column;
         width: 80%;
         padding-right: 36px;
-        padding-left: 16px;
+        padding-left: 36px;
+    }
+    @include desktop{
+        display: inline-flex;
+        flex-direction: column;
+        width: 100%;
+        padding-right: 36px;
+        padding-left: 64px;
     }
 }
 
@@ -440,7 +507,12 @@ footer .footer__bandsite--title{
     font-family: 'Avenir Next Regular';
     font-size: 0.75rem;
     @include tablet{
-        padding-left: 16px;
+        padding-left: 36px;
+        align-self: flex-start;
+        margin-top: 200px;
+    }
+    @include desktop{
+        padding-left: 64px;
         align-self: flex-start;
         margin-top: 200px;
     }

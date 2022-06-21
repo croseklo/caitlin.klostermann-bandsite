@@ -164,13 +164,13 @@ nav p {
 @media screen and (min-width: 768px) {
   .hero_title {
     padding-left: 36px;
-    font-size: 3.75rem;
+    font-size: 3.5rem;
   }
 }
 @media screen and (min-width: 1280px) {
   .hero_title {
     padding-left: 64px;
-    font-size: 4rem;
+    font-size: 3.75rem;
   }
 }
 
@@ -178,26 +178,65 @@ main div {
   color: #323232;
 }
 
-.main__about p {
-  font-family: "Avenir Next Demi";
-  font-size: 2rem;
-  padding-top: 24px;
-  margin-bottom: 16px;
-  margin-left: 16px;
+@media screen and (min-width: 768px) {
+  .main__about {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .main__about {
+    margin-left: 36px;
+    margin-right: 36px;
+  }
 }
 
-.main__about--img {
-  width: 100%;
-  height: auto;
+.main__about--title {
+  font-family: "Avenir Next Demi";
+  padding-top: 24px;
+  margin-bottom: 16px;
 }
 @media screen and (max-width: 767px) {
+  .main__about--title {
+    font-size: 1.9rem;
+    padding-left: 16px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .main__about--title {
+    font-size: 2rem;
+    padding-left: 36px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .main__about--title {
+    font-size: 2.25rem;
+    padding-left: 64px;
+  }
+}
+
+@media screen and (max-width: 767px) {
   .main__about--img {
-    padding: 0 16px;
+    width: 100%;
+    height: auto;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 @media screen and (min-width: 768px) {
   .main__about--img {
-    padding: 0 36px;
+    width: 100%;
+    height: auto;
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .main__about--img {
+    width: 100%;
+    height: auto;
+    padding-left: 80px;
+    padding-right: 80px;
   }
 }
 
@@ -217,6 +256,12 @@ main div {
     padding: 36px 36px 18px 36px;
   }
 }
+@media screen and (min-width: 1280px) {
+  .main__about .main__about--quote {
+    padding: 36px 36px 18px 80px;
+    width: 60%;
+  }
+}
 
 .main__about .main__about--source {
   font-family: "Avenir Next Demi";
@@ -233,25 +278,49 @@ main div {
     padding: 0 36px;
   }
 }
+@media screen and (min-width: 1280px) {
+  .main__about .main__about--source {
+    padding: 0 80px;
+  }
+}
 
 .main__about--info {
   font-family: "Avenir Next Regular";
 }
+@media screen and (min-width: 768px) {
+  .main__about--info {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .main__about--info {
+    margin-left: 36px;
+    margin-right: 36px;
+  }
+}
 
-.main__about--info .main__about--title {
+.main__about--info .main__about--paratitle {
   color: black;
 }
 @media screen and (max-width: 767px) {
-  .main__about--info .main__about--title {
+  .main__about--info .main__about--paratitle {
     font-family: "Avenir Next Regular";
     font-size: 1rem;
     padding: 24px 16px 16px 16px;
   }
 }
 @media screen and (min-width: 768px) {
-  .main__about--info .main__about--title {
+  .main__about--info .main__about--paratitle {
     font-family: "Avenir Next Demi";
     padding: 52px 36px 36px 36px;
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .main__about--info .main__about--paratitle {
+    font-family: "Avenir Next Demi";
+    padding: 52px 36px 36px 64px;
     font-size: 1.5rem;
   }
 }
@@ -279,6 +348,14 @@ main div {
     flex-direction: row;
     width: 45%;
     padding: 0 0px 36px 36px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .main__about--info .main__about--para1 {
+    display: inline-flex;
+    flex-direction: row;
+    width: 45%;
+    padding: 0 0px 36px 64px;
   }
 }
 
@@ -344,7 +421,6 @@ main div {
 footer {
   background-color: #323232;
   color: white;
-  padding-left: 16px;
   padding-right: 16px;
 }
 
@@ -361,7 +437,13 @@ footer {
 @media screen and (min-width: 768px) {
   .footer__title {
     display: inline-flex;
-    padding: 36px 36px 36px 16px;
+    padding: 36px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer__title {
+    display: inline-flex;
+    padding: 36px 36px 36px 64px;
   }
 }
 
@@ -398,7 +480,16 @@ footer a {
     flex-direction: column;
     width: 80%;
     padding-right: 36px;
-    padding-left: 16px;
+    padding-left: 36px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer__contact--top {
+    display: inline-flex;
+    flex-direction: column;
+    width: 100%;
+    padding-right: 36px;
+    padding-left: 64px;
   }
 }
 
@@ -487,7 +578,14 @@ footer .footer__bandsite--title {
 }
 @media screen and (min-width: 768px) {
   .footer__bandsite--copyright {
-    padding-left: 16px;
+    padding-left: 36px;
+    align-self: flex-start;
+    margin-top: 200px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer__bandsite--copyright {
+    padding-left: 64px;
     align-self: flex-start;
     margin-top: 200px;
   }
