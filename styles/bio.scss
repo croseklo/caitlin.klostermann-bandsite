@@ -211,7 +211,7 @@ nav p {
   @include mobile {
     padding-left: 16px;
     font-size: 2rem;
-    line-height: 31px;
+    line-height: 32px;
   }
   @include tablet {
     padding-left: 36px;
@@ -474,7 +474,7 @@ footer {
 .social__icons {
   @include tablet {
     display: inline;
-    margin-right: 20%;
+    margin-right: 80%;
   }
 }
 
