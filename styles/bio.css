@@ -42,27 +42,22 @@ a:link {
 }
 
 /** Navigation Styling **/
-nav {
+header {
   background-color: #323232;
   color: white;
 }
 
-.navbar {
+.header_component {
   font-family: "Avenir Next Regular";
   margin: 0;
   font-size: 1.75rem;
   text-decoration: none;
   color: #fafafa;
-}
-@media screen and (max-width: 767px) {
-  .navbar {
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 10px;
-  }
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 @media screen and (min-width: 768px) {
-  .navbar {
+  .header_component {
     display: inline-flex;
     padding-top: 20px;
     margin-right: 10%;
@@ -71,7 +66,7 @@ nav {
   }
 }
 @media screen and (min-width: 1280px) {
-  .navbar {
+  .header_component {
     display: inline-flex;
     padding-top: 20px;
     margin-right: 80px;
@@ -80,21 +75,17 @@ nav {
   }
 }
 
-nav p {
+header p {
   font-family: "Avenir Next Regular";
   margin: 0;
   font-size: 1.75rem;
   text-decoration: none;
-}
-@media screen and (max-width: 767px) {
-  nav p {
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 10px;
-  }
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 @media screen and (min-width: 768px) {
-  nav p {
+  header p {
     display: inline-flex;
     padding-top: 20px;
     margin-right: 10%;
@@ -103,7 +94,7 @@ nav p {
   }
 }
 @media screen and (min-width: 1280px) {
-  nav p {
+  header p {
     display: inline-flex;
     padding-top: 20px;
     margin-right: 80px;
@@ -128,19 +119,19 @@ nav p {
   }
 }
 
-.fixed__page {
+.header_component-logo {
   border-bottom: 3px solid white;
   padding-bottom: 17px;
   color: white;
 }
 @media screen and (max-width: 767px) {
-  .fixed__page {
+  .header_component-logo {
     width: 50%;
     text-align: center;
   }
 }
 @media screen and (min-width: 768px) {
-  .fixed__page {
+  .header_component-logo {
     display: inline;
     width: 100%;
     margin-right: 50%;
@@ -148,17 +139,17 @@ nav p {
   }
 }
 
-.second__page {
+.header_component-logo {
   width: 50%;
   color: white;
 }
 @media screen and (max-width: 767px) {
-  .second__page {
+  .header_component-logo {
     text-align: center;
   }
 }
 @media screen and (min-width: 768px) {
-  .second__page {
+  .header_component-logo {
     display: inline;
     width: 100%;
     margin-right: 50%;
@@ -541,7 +532,7 @@ footer {
 @media screen and (min-width: 768px) {
   .social__icons {
     display: inline;
-    margin-right: 80%;
+    margin-right: 60%;
   }
 }
 
