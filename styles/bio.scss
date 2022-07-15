@@ -15,14 +15,14 @@ a:link {
   opacity: 50%;
 }
 
-.fixed__page:hover {
+.header_component-logo1:hover {
   text-decoration: underline;
   text-decoration-color: $secondary-color;
   text-decoration-thickness: 3px;
   text-underline-offset: 21px;
 }
 
-.second__page:hover {
+.header_component-logo2:hover {
   text-decoration: underline;
   text-decoration-color: $secondary-color;
   text-decoration-thickness: 3px;
@@ -96,7 +96,7 @@ header p {
   }
 }
 
-.header_component-logo {
+.header_component-logo1 {
   border-bottom: 3px solid $tertiary-color;
   padding-bottom: 17px;
   color: $tertiary-color;
@@ -112,7 +112,7 @@ header p {
   }
 }
 
-.header_component-logo {
+.header_component-logo2 {
   width: 50%;
   color: $tertiary-color;
   @include mobile {
@@ -197,7 +197,7 @@ main div {
 .main__about--title {
   font-family: "Avenir Next Demi";
   @include mobile {
-    font-size: 1rem;
+    font-size: 2rem;
     padding-left: 16px;
     padding-top: 24px;
     margin-bottom: 16px;
@@ -394,6 +394,26 @@ main div {
     width: 31%;
     height: auto;
     padding: 8px 8px;
+  }
+}
+/**Main Comment Section Styling**/
+
+.comment__section{
+  font-family: "Avenir Next Demi";
+  color: $primary-color;
+  background-color: $tertiary-color;
+}
+
+.comment__section p {
+  font-size: 2rem;
+  @include mobile {
+    padding: 24px 16px 0 16px;
+  }
+  @include tablet {
+    padding: 48px 0 0 36px;
+  }
+  @include desktop {
+    padding: 48px 0 0 36px;
   }
 }
 
