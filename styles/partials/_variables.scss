@@ -1,0 +1,42 @@
+@font-face {
+    font-family: "Avenir Next Bold";
+    src: url(../assets/fonts/AvenirNextLTPro-Bold.otf);
+  }
+  
+  @font-face {
+    font-family: "Avenir Next Demi";
+    src: url(../assets/fonts/AvenirNextLTPro-Demi.otf);
+  }
+  
+  @font-face {
+    font-family: "Avenir Next Regular";
+    src: url(../assets/fonts/AvenirNextLTPro-Regular.otf);
+  }
+  
+  $primary-color: #323232;
+  $secondary-color: #fafafa;
+  $tertiary-color: white;
+  $dark-color: black;
+  
+  /** Breakpoints **/
+  $mobile-breakpoint: 767px;
+  $tablet-breakpoint: 768px;
+  $desktop-breakpoint: 1280px;
+  
+  @mixin mobile {
+    @media screen and (max-width: $mobile-breakpoint) {
+      @content;
+    }
+  }
+  
+  @mixin tablet {
+    @media screen and (min-width: $tablet-breakpoint) {
+      @content;
+    }
+  }
+  
+  @mixin desktop {
+    @media screen and (min-width: $desktop-breakpoint) {
+      @content;
+    }
+  }
