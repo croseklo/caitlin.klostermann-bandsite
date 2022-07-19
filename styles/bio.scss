@@ -36,14 +36,8 @@ header {
   color: $tertiary-color;
 }
 
-.header_component {
-  font-family: "Avenir Next Regular";
-  margin: 0;
-  font-size: 1.75rem;
-  text-decoration: none;
-  color: $secondary-color;
-    padding-top: 20px;
-    padding-bottom: 10px;
+header h1{
+  text-align: center;
   @include tablet {
     display: inline-flex;
     padding-top: 20px;
@@ -58,6 +52,17 @@ header {
     padding-bottom: 7px;
     padding-left: 10%;
   }
+}
+
+.header_component {
+  font-family: "Avenir Next Regular";
+  margin: 0;
+  font-size: 1.75rem;
+  text-decoration: none;
+  color: $secondary-color;
+  padding-top: 20px;
+  padding-bottom: 10px;
+
 }
 
 header p {
@@ -398,16 +403,24 @@ main div {
 }
 /**Main Comment Section Styling**/
 
-.comment__section{
+
+.comment__section-title{
   font-family: "Avenir Next Demi";
   color: $primary-color;
   background-color: $tertiary-color;
 }
 
-.comment__section p {
+.comment__section{
+  font-family: "Avenir Next Demi";
+  color: $silver-color;
+  background-color: $tertiary-color;
+  padding: 0 16px 0 16px;
+}
+
+.comment__section-title {
   font-size: 2rem;
   @include mobile {
-    padding: 24px 16px 0 16px;
+    padding: 24px 16px 0 0;
   }
   @include tablet {
     padding: 48px 0 0 36px;
@@ -415,6 +428,113 @@ main div {
   @include desktop {
     padding: 48px 0 0 36px;
   }
+}
+
+.comment__section-img{
+  margin-top: 64px;
+  display: inline;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: -95px;
+}
+
+.comment__section-form{
+  display: flex;
+  flex-direction: column;
+  @include desktop{
+    margin-left: 30%;
+    margin-right: 10%;
+  }
+}
+
+.comment__section-info{
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  margin-left: 70px;
+  border-bottom: 2px solid $mercury-color;
+  padding-bottom: 16px;
+  margin-bottom: 24px;
+}
+
+.comment__section-info p{
+  padding: 24px 0 8px 0;
+  font-size: .75rem;
+}
+
+.comment__section-textarea{
+  height: 125px;
+  width: 100%;
+  border: 1px solid $silver-color;
+  font-family: "Avenir Next Regular";
+  background-color: $secondary-color;
+  font-size: 1rem;
+  padding: 15px;
+  margin-bottom: 25px;
+  border-radius: 5px;
+}
+
+.comment__section-default{
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  margin-left: 70px;
+  margin-top: -75px;
+}
+
+.comment__section-name{
+  width: 100%;
+  border: 1px solid $silver-color;
+  color: $primary-color;
+  font-family: "Avenir Next Regular";
+  background-color: $secondary-color;
+  font-size: 1rem;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.comment__section-button{
+  width: 100%;
+  font-family: "Avenir Next Demi";
+  background-color: $primary-color;
+  border: 1px solid $primary-color;
+  color: $secondary-color;
+  font-size: 1.25rem;
+  padding: 16px 0 16px 0;
+  margin-bottom: 16px;
+  border-radius: 5px;
+  @include tablet{
+    width: 35%;
+    margin-left: 65%;
+  }
+}
+
+.comment__section-person{
+  font-family: "Avenir Next Demi";
+  color: $primary-color;
+  padding-top: 32px;
+  padding-bottom: 8px;
+}
+
+.comment__section-comments{
+  font-family: "Avenir Next Regular";
+  color: $primary-color;
+  padding-bottom: 24px;
+  border-bottom: 2px solid $mercury-color;
+  margin-bottom: 24px;
+}
+
+.comment__img{
+  display: inline;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  background-color: $mercury-color;
 }
 
 /** Footer Styling **/
@@ -439,7 +559,7 @@ footer {
     display: inline-flex;
     padding: 48px 36px 36px 36px;
   }
-  @include desktop() {
+  @include desktop {
     display: inline-flex;
     padding: 48px 36px 36px 36px;
   }
@@ -447,6 +567,10 @@ footer {
 
 .social__icons {
   @include tablet {
+    display: inline;
+    margin-right: 15%;
+  }
+  @include desktop {
     display: inline;
     margin-right: 60%;
   }
