@@ -53,4 +53,12 @@ shows.forEach((item) => {
     list.appendChild(li);
 });
 
+// forEach((item) => {
+//     let button = document.createElement("button");
+//     button.innerText = item;
+//     li.appendChild(button);
+// });
+
+
+
 

@@ -642,6 +642,12 @@ main div {
   background-color: #E1E1E1;
 }
 
+.comment__section-new {
+  font-family: "Avenir Next Regular";
+  color: #323232;
+  padding-left: 70px;
+}
+
 /** Footer Styling **/
 footer {
   background-color: #323232;

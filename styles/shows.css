@@ -30,7 +30,7 @@ a:link {
   -webkit-text-decoration-color: #fafafa;
           text-decoration-color: #fafafa;
   text-decoration-thickness: 3px;
-  text-underline-offset: 21px;
+  text-underline-offset: 18px;
 }
 
 .header_component-logo2:hover {
@@ -38,7 +38,7 @@ a:link {
   -webkit-text-decoration-color: #fafafa;
           text-decoration-color: #fafafa;
   text-decoration-thickness: 3px;
-  text-underline-offset: 21px;
+  text-underline-offset: 18px;
 }
 
 /** Navigation Styling **/
@@ -124,7 +124,6 @@ header p {
 }
 
 .header_component-logo1 {
-  border-bottom: 3px solid white;
   padding-bottom: 17px;
   color: white;
 }
@@ -144,6 +143,7 @@ header p {
 }
 
 .header_component-logo2 {
+  border-bottom: 3px solid white;
   width: 50%;
   color: white;
 }
@@ -173,7 +173,7 @@ header p {
 }
 @media screen and (max-width: 767px) {
   .hero {
-    height: 25rem;
+    height: 22rem;
     width: auto;
   }
 }
@@ -185,7 +185,7 @@ header p {
 }
 @media screen and (min-width: 1280px) {
   .hero {
-    height: 45rem;
+    height: 35rem;
     width: auto;
   }
 }
@@ -236,7 +236,7 @@ div .hero__title-album {
 }
 @media screen and (min-width: 768px) {
   .hero__title-band {
-    padding-bottom: 24px;
+    padding-bottom: 36px;
     padding-left: 36px;
     font-size: 3.75rem;
     line-height: 68px;
@@ -245,7 +245,7 @@ div .hero__title-album {
 @media screen and (min-width: 1280px) {
   .hero__title-band {
     padding-left: 64px;
-    padding-bottom: 24px;
+    padding-bottom: 64px;
     font-size: 3.75rem;
     line-height: 68px;
   }
@@ -256,6 +256,23 @@ iframe {
 }
 
 /**Main Styling**/
+main {
+  font-family: "Avenir Next Demi";
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-top: 32px;
+  font-size: 1rem;
+}
+
+li {
+  list-style: none;
+  font-family: "Avenir Next Demi";
+  color: black;
+  margin-top: 32px;
+  font-size: 0.8rem;
+  border-bottom: 2px solid #AFAFAF;
+}
+
 /** Footer Styling **/
 footer {
   background-color: #323232;
