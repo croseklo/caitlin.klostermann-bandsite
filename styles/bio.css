@@ -25,7 +25,7 @@ a:link {
   opacity: 50%;
 }
 
-.fixed__page:hover {
+.header_component-logo1:hover {
   text-decoration: underline;
   -webkit-text-decoration-color: #fafafa;
           text-decoration-color: #fafafa;
@@ -33,7 +33,7 @@ a:link {
   text-underline-offset: 21px;
 }
 
-.second__page:hover {
+.header_component-logo2:hover {
   text-decoration: underline;
   -webkit-text-decoration-color: #fafafa;
           text-decoration-color: #fafafa;
@@ -47,17 +47,11 @@ header {
   color: white;
 }
 
-.header_component {
-  font-family: "Avenir Next Regular";
-  margin: 0;
-  font-size: 1.75rem;
-  text-decoration: none;
-  color: #fafafa;
-  padding-top: 20px;
-  padding-bottom: 10px;
+header h1 {
+  text-align: center;
 }
 @media screen and (min-width: 768px) {
-  .header_component {
+  header h1 {
     display: inline-flex;
     padding-top: 20px;
     margin-right: 10%;
@@ -66,13 +60,23 @@ header {
   }
 }
 @media screen and (min-width: 1280px) {
-  .header_component {
+  header h1 {
     display: inline-flex;
     padding-top: 20px;
     margin-right: 80px;
     padding-bottom: 7px;
     padding-left: 10%;
   }
+}
+
+.header_component {
+  font-family: "Avenir Next Regular";
+  margin: 0;
+  font-size: 1.75rem;
+  text-decoration: none;
+  color: #fafafa;
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 
 header p {
@@ -119,19 +123,19 @@ header p {
   }
 }
 
-.header_component-logo {
+.header_component-logo1 {
   border-bottom: 3px solid white;
   padding-bottom: 17px;
   color: white;
 }
 @media screen and (max-width: 767px) {
-  .header_component-logo {
+  .header_component-logo1 {
     width: 50%;
     text-align: center;
   }
 }
 @media screen and (min-width: 768px) {
-  .header_component-logo {
+  .header_component-logo1 {
     display: inline;
     width: 100%;
     margin-right: 50%;
@@ -139,17 +143,17 @@ header p {
   }
 }
 
-.header_component-logo {
+.header_component-logo2 {
   width: 50%;
   color: white;
 }
 @media screen and (max-width: 767px) {
-  .header_component-logo {
+  .header_component-logo2 {
     text-align: center;
   }
 }
 @media screen and (min-width: 768px) {
-  .header_component-logo {
+  .header_component-logo2 {
     display: inline;
     width: 100%;
     margin-right: 50%;
@@ -244,7 +248,7 @@ main div {
 }
 @media screen and (max-width: 767px) {
   .main__about--title {
-    font-size: 1rem;
+    font-size: 2rem;
     padding-left: 16px;
     padding-top: 24px;
     margin-bottom: 16px;
@@ -494,6 +498,156 @@ main div {
   }
 }
 
+/**Main Comment Section Styling**/
+.comment__section-title {
+  font-family: "Avenir Next Demi";
+  color: #323232;
+  background-color: white;
+}
+
+.comment__section {
+  font-family: "Avenir Next Demi";
+  color: #AFAFAF;
+  background-color: white;
+  padding: 0 16px 0 16px;
+}
+
+.comment__section-title {
+  font-size: 2rem;
+}
+@media screen and (max-width: 767px) {
+  .comment__section-title {
+    padding: 24px 16px 0 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .comment__section-title {
+    padding: 48px 0 0 36px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .comment__section-title {
+    padding: 48px 0 0 36px;
+  }
+}
+
+.comment__section-img {
+  margin-top: 64px;
+  display: inline;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: -95px;
+}
+
+.comment__section-form {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 1280px) {
+  .comment__section-form {
+    margin-left: 30%;
+    margin-right: 10%;
+  }
+}
+
+.comment__section-info {
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  margin-left: 70px;
+  border-bottom: 2px solid #E1E1E1;
+  padding-bottom: 16px;
+  margin-bottom: 24px;
+}
+
+.comment__section-info p {
+  padding: 24px 0 8px 0;
+  font-size: 0.75rem;
+}
+
+.comment__section-textarea {
+  height: 125px;
+  width: 100%;
+  border: 1px solid #AFAFAF;
+  font-family: "Avenir Next Regular";
+  background-color: #fafafa;
+  font-size: 1rem;
+  padding: 15px;
+  margin-bottom: 25px;
+  border-radius: 5px;
+}
+
+.comment__section-default {
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  margin-left: 70px;
+  margin-top: -75px;
+}
+
+.comment__section-name {
+  width: 100%;
+  border: 1px solid #AFAFAF;
+  color: #323232;
+  font-family: "Avenir Next Regular";
+  background-color: #fafafa;
+  font-size: 1rem;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.comment__section-button {
+  width: 100%;
+  font-family: "Avenir Next Demi";
+  background-color: #323232;
+  border: 1px solid #323232;
+  color: #fafafa;
+  font-size: 1.25rem;
+  padding: 16px 0 16px 0;
+  margin-bottom: 16px;
+  border-radius: 5px;
+}
+@media screen and (min-width: 768px) {
+  .comment__section-button {
+    width: 35%;
+    margin-left: 65%;
+  }
+}
+
+.comment__section-person {
+  font-family: "Avenir Next Demi";
+  color: #323232;
+  padding-top: 32px;
+  padding-bottom: 8px;
+}
+
+.comment__section-comments {
+  font-family: "Avenir Next Regular";
+  color: #323232;
+  padding-bottom: 24px;
+  border-bottom: 2px solid #E1E1E1;
+  margin-bottom: 24px;
+}
+
+.comment__img {
+  display: inline;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  background-color: #E1E1E1;
+}
+
+.comment__section-new {
+  font-family: "Avenir Next Regular";
+  color: #323232;
+  padding-left: 70px;
+}
+
 /** Footer Styling **/
 footer {
   background-color: #323232;
@@ -530,6 +684,12 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
+  .social__icons {
+    display: inline;
+    margin-right: 15%;
+  }
+}
+@media screen and (min-width: 1280px) {
   .social__icons {
     display: inline;
     margin-right: 60%;
